@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <h1>Enter User Details</h1>
+    <form id="userForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <label for="email1">Email ID 1:</label><br>
+        <input type="email" id="email1" name="email1" required><br><br>
+
+        <label for="email2">Email ID 2:</label><br>
+        <input type="email" id="email2" name="email2"><br><br>
+
+        <label for="email3">Email ID 3:</label><br>
+        <input type="email" id="email3" name="email3"><br><br>
+
+        <label for="phone1">Phone Number 1:</label><br>
+        <input type="tel" id="phone1" name="phone1" pattern="[0-9]{10}" required><br><br>
+
+        <label for="phone2">Phone Number 2:</label><br>
+        <input type="tel" id="phone2" name="phone2" pattern="[0-9]{10}"><br><br>
+
+        <button type="button" onclick="saveToFile()">Save Info</button>
+    </form>
+
+    <script>
+        function generateRandomLetter() {
+            const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+            return letters.charAt(Math.floor(Math.random() * letters.length));
+        }
+
+        function generateRandomNumber() {
+            return Math.floor(Math.random() * 10000); // Adjust the range as needed
+        }
+
+        function saveToFile() {
+            // Get form data
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+            const email1 = document.getElementById('email1').value;
+            const email2 = document.getElementById('email2').value;
+            const email3 = document.getElementById('email3').value;
+            const phone1 = document.getElementById('phone1').value;
+            const phone2 = document.getElementById('phone2').value;
+
+            // Create content for the text file
+            const content = `Username: ${username}\nPassword: ${password}\nConfirm Password: ${confirmPassword}\nEmail ID 1: ${email1}\nEmail ID 2: ${email2}\nEmail ID 3: ${email3}\nPhone Number 1: ${phone1}\nPhone Number 2: ${phone2}`;
+
+            // Generate a random letter and number
+            const randomLetter = generateRandomLetter();
+            const randomNumber = generateRandomNumber();
+
+            // Create a filename with the random letter and number
+            const filename = `user_${randomLetter}_${randomNumber}_details.txt`;
+
+            // Create a Blob object with the form data
+            const blob = new Blob([content], { type: 'text/plain' });
+
+            // Create an anchor element and trigger a download
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
+
