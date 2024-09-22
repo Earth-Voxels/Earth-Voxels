@@ -1,0 +1,7 @@
+- 👋 Hi, I’m @Earth-Voxels
+- 👀 I’m interested in OS,coding and computer hardware
+- 🌱 I’m currently learning HTML and Python and JavaScript
+- 📫 How to reach me: Email :voxels1020@gmail.com
+- 😄 Pronouns: He
+- ⚡ Fun fact: I am the person who made his phone look like Windows 
+- ⚡ Fun fact: I am..... DUMB
