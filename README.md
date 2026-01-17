@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @Earth-Voxels
 - 👀 I’m interested in OS,coding and computer hardware
-- 🌱 I’m currently learning HTML and Python and JavaScript
+- 🌱 I know Python and Lua pretty good and have experience in Python library Manim and Luau (Roblox Lua)
 - 📫 How to reach me: Email :voxels1020@gmail.com
 - 😄 Pronouns: He/Him
-- ⚡ Fun fact: I am the person who made his phone look like Windows 
-- ⚡ Fun fact: I am..... DUMB
