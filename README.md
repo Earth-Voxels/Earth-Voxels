@@ -1,5 +1,4 @@
-- 👋 Hi, I’m @Earth-Voxels
-- 👀 I’m interested in OS,coding and computer hardware
-- 🌱 I know Python and Lua pretty good and have experience in Python library Manim and Luau (Roblox Lua)
-- 📫 How to reach me: Email :voxels1020@gmail.com
-- 😄 Pronouns: He/Him
+Hi, I am Earth Lexov
+I am interested in studying and learning about Operating systems and software
+I can code in Python and Lua and experienced in the Python library "Manim" and Luau (Roblox Lua)
+I am experienced with the Linux Terminal and can operate in operating systems with no GUI easily
