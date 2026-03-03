@@ -11,3 +11,8 @@ Web developing
 Playing Guitar
 
 Windows
+
+# Skills
+Python
+Lua
+HTML
